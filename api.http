@@ -1,0 +1,28 @@
+### Test GET /api/books?subject=love
+GET http://localhost:8080/api/books?subject=love
+
+### Test GET /api/books?subject=love
+GET http://localhost:8080/api/books?subject=123
+
+### Test POST /api/schedule-pickup
+POST http://localhost:8080/api/schedule-pickup
+Content-Type: application/json
+
+{
+  "book_title": "How to train million grandma",
+  "user_name": "dummy-test",
+  "pickup_time": "2024-09-01T10:00:00Z"
+}
+
+### Test POST /api/schedule-pickup
+POST http://localhost:8080/api/schedule-pickup
+Content-Type: application/json
+
+{
+  "book_title": "How to train million grandma",
+  "user_name": "dummy-test",
+  "pickup_time": "2021-09-01T10:00:00Z"
+}
+
+### Test GET /api/get-schedule
+GET http://localhost:8080/api/get-schedule
